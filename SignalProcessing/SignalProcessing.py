@@ -108,7 +108,7 @@ for i in range(0, 2):
     for j in range(0, 2):
         ax[i][j].plot(x5, y5[s3], linewidth=1)
         s3 += 1
-fig.suptitle("Спектр сигналів з кроком дискретизації Dt = [2, 4, 8, 16]", fontsize=14)
+fig.suptitle("Відтворення аналогових сигналів з кроком дискретизації Dt = [2, 4, 8, 16]", fontsize=14)
 ax[1, 0].set_xlabel("Час (секунди)", fontsize=14)
 ax[1, 1].set_xlabel("Час (секунди)", fontsize=14)
 ax[0, 0].set_ylabel("Амплітуда сигналу", fontsize=14)
@@ -120,9 +120,9 @@ x6 = [2, 4, 8, 16]
 y6 = dispersion_s
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.plot(x6, y6, linewidth=1)
-ax.set_xlabel("Крок дистанції", fontsize=14)
+ax.set_xlabel("Крок дискретизації", fontsize=14)
 ax.set_ylabel("Дисперсія", fontsize=14)
-plt.title("Залежність дисперсії від кроку дистанції", fontsize=14)
+plt.title("Залежність дисперсії від кроку дискретизації", fontsize=14)
 title6 = "Графік 6"
 fig.savefig("./figures/" + title6 + ".png", dpi=600)
 
